@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="250.0" styleClass="bg" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.lubowiecki.MainController">
+   <children>
+      <TextField fx:id="eingabe" layoutX="22.0" layoutY="16.0" onKeyPressed="#eingabeVerarbeiten" prefHeight="32.0" prefWidth="215.0" styleClass="input-bg" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0" />
+      <Separator layoutX="25.0" layoutY="73.0" prefWidth="200.0" />
+      <ListView fx:id="tasks" layoutX="25.0" layoutY="94.0" onKeyPressed="#statusAendern" prefHeight="324.0" prefWidth="200.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Button layoutX="25.0" layoutY="89.0" mnemonicParsing="false" onAction="#filter" prefHeight="25.0" prefWidth="60.0" text="offen" />
+      <Button layoutX="95.0" layoutY="89.0" mnemonicParsing="false" onAction="#filter" prefHeight="25.0" prefWidth="60.0" text="erledigt" />
+      <Button layoutX="165.0" layoutY="89.0" mnemonicParsing="false" onAction="#filter" prefHeight="25.0" prefWidth="60.0" text="alle" />
+   </children>
+</AnchorPane>

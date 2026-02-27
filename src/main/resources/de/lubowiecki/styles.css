@@ -1,0 +1,20 @@
+.bg {
+    -fx-background-color: #333333;
+}
+
+.separator {
+    -fx-background-color: #666666;
+    -fx-border-width: 0.5;
+    -fx-border-color: null;
+}
+
+.input-bg {
+    -fx-background-color: #CCCCCC;
+    -fx-background-radius: 0;
+}
+
+.button {
+    -fx-background-color: #888888;
+    -fx-background-radius: 0;
+    -fx-text-fill: #EEEEEE;
+}
